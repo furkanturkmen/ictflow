@@ -74,7 +74,7 @@ const Pricing = ({ services = [], workspace }) => {
                       Get Started with {planLabel}
                     </a>
                     <div className="space-y-5">
-                      <h6 className={`uppercase text-black text-gray-900 ${setDarkMode ? 'dark:text-white' : 'dark:text-gray-100'}`}>What's Included</h6>
+                      <h6 className={`uppercase text-black text-gray-900 ${setDarkMode ? 'dark:text-white' : 'dark:text-gray-100'}`}>What&apos;s Included</h6>
                       <ul className={`leading-10 list-none list-inside text-black text-gray-900 ${setDarkMode ? 'dark:text-white' : 'dark:text-gray-100'}`}>
                         <li className="flex items-center space-x-5">
                           <CheckIcon className="w-5 h-5 text-green-600" />
