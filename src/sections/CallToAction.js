@@ -13,7 +13,7 @@ const CallToAction = () => {
             <span className="block">Stuur ons een bericht!</span>
           </h2>
           <h2 className="text-2xl font-bold text-center md:text-4xl text-gray-400 dark:text-gray-300">
-            <span className="block">of mail ons naar <Link href={"mailto:info@ictflow.nl"} class={`hover:underline`}>info@ictflow.nl</Link></span>
+            <span className="block">of mail ons naar <Link href={"mailto:info@ictflow.nl"} className={`hover:underline`}>info@ictflow.nl</Link></span>
           </h2>
         </div>
         <div className="flex items-center justify-center">

@@ -7,15 +7,18 @@ import { Toaster } from 'react-hot-toast';
 const AuthLayout = ({ children }) => {
   const router = useRouter();
   const { status } = useSession();
-  const { setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
 
   useEffect(() => {
-    setTheme('light');
+    // Only set light theme if there's no theme already stored
+    if (!theme && resolvedTheme !== 'light') {
+      setTheme('light');
+    }
 
     if (status === 'authenticated') {
       router.push('/account');
     }
-  }, [setTheme, status, router]);
+  }, [theme, resolvedTheme, setTheme, status, router]);
 
   if (status === 'loading') return <></>;
   return (

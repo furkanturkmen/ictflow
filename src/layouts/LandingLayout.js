@@ -1,5 +1,4 @@
-import Header from '@/components/Header'; // ✅ Adjust path if needed
-
+import Header from '@/components/Header'; 
 const LandingLayout = ({ children }) => {
   return (
     <>

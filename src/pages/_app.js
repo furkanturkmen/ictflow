@@ -62,7 +62,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <SessionProvider session={pageProps.session}>
       <SWRConfig value={swrOptions}>
-        <ThemeProvider attribute="class">
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} storageKey="theme">
           <WorkspaceProvider>
             {progress && <TopBarProgress />}
             <Component {...pageProps} />
